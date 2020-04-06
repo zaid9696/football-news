@@ -1,0 +1,98 @@
+
+
+.archive__title{
+ 
+    grid-column: center-start / center-end;
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+    padding-left: 15px;
+    font-size: 3rem;
+    @media screen and (max-width: 630px){
+        font-size: 2rem;
+    }
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #49355a;
+    border-left: 4px solid;
+    margin-bottom: 25px;
+  
+}
+
+.archive{
+
+    grid-column: center-start / center-end;
+    
+    &__container{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        background-color: #f7f7f7;
+        padding: 23px 12px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        @media screen and (max-width: 630px){
+            flex-direction: column;
+        }
+    }
+
+    &__header{
+        padding-right: 8px;
+        @media screen and (max-width: 630px){
+            padding: 4px;
+        margin-bottom: 11px;
+        }
+        
+        img{
+            width: 180px;
+            height: 100%;
+            border: 2px solid;
+            border-radius: 6px;
+            @media screen and (max-width: 630px){
+                width: 100%;
+            }
+        }
+    }
+    &__content{
+        margin-left: 34px;
+        @media screen and (max-width: 630px){
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        h2{
+            margin-bottom: 13px;
+            font-size: 2rem;
+            @media screen and (max-width: 630px){
+                font-size: 1.7rem;
+            }
+            color: #49355a;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+    &__para{
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        color: #49355a;
+        font-weight: 500;
+    }
+
+    &__meta{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.2rem;
+        color: #49355a;
+        a{
+            color: #49355a;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                font-weight: 700;
+            }
+        }
+        
+    }
+
+}
+
+

@@ -1,0 +1,89 @@
+.hero{
+
+    grid-column: full-start/ full-end;
+    min-height: 385px;
+    display: flex;
+    background-color: #0e0413;
+    @media screen and (max-width: 900px){
+
+        flex-direction: column;
+    }
+
+    &__content{
+       width: 43%;
+        color: #ee2e31;
+        height: 100%;
+        padding-left: 40px;
+        padding-top: 32px;
+        @media screen and (max-width: 900px){
+            width: auto;
+            order: 9;
+            padding-top: 22px;
+            padding-bottom: 22px;
+            padding-right: 20px;
+        }
+
+    }
+
+    &__header{
+        h1{
+            font-size: 2.8rem;
+            line-height: 38px;
+            letter-spacing: 0.1rem;
+            border-bottom: 2px solid;
+            padding-bottom: 7px;
+            margin-bottom: 14px;
+            @media screen and (max-width: 500px){
+                font-size: 2.1rem;
+                line-height: 24px
+            };
+        }
+    }
+    
+    &__excerpt{
+        font-size: 2.2rem;
+        line-height: 29px;
+        font-weight: 100;
+        @media screen and (max-width: 500px){
+            font-size: 1.9rem;
+            line-height: 24px;
+            font-weight: 400;
+        };
+    }
+
+    &__background{
+        width: 55%;
+        background-size: cover;
+        clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%);
+        @media screen and (max-width: 900px){
+            background-position: center;
+            width: auto;
+             clip-path: none; 
+            height: 220px;
+        }
+
+
+    }
+
+    &__btn{
+        margin-top: 31px;
+
+        a{
+            font-size: 2rem;
+            color: #0e0413;
+            text-decoration: none;
+            background-color: #ee2e31;
+            padding: 0.9rem 3rem;
+            border-radius: 13px;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: 1px solid #ffffff3b;
+            transition: all 0.4s ease-in-out;
+            &:hover{
+                background-color: #0e0413;
+                box-shadow: 0px 1px 4px 1px #ee2e3136;
+                color: #ee2e31;
+            }
+        }
+    }
+}

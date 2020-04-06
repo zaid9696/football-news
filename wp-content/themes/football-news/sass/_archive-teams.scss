@@ -1,0 +1,76 @@
+
+.archive-teams__title{
+    grid-column: center-start / center-end;
+    margin-top: 27px;
+    padding-left: 15px;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1d0037;
+    border-left: 4px solid;
+  
+}
+
+
+.archive-teams{
+
+    grid-column:  center-start / center-end;
+    margin-top: 20px;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        background-color: #f7f7f7;
+        padding: 23px 12px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        border: 1px solid;
+    }
+
+    &__header{
+        border-right: 2px solid;
+        padding-right: 14px;
+        img{
+            width: 180px;
+            height: 100%;
+            @media screen and (max-width: 630px){
+                width: 120px;
+            }
+        }
+    }
+
+    &__content{
+        margin-left: 34px;
+        @media screen and (max-width: 630px){
+            margin-left: 15px;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+    &__club-title{
+        margin-bottom: 18px;
+        font-size: 2.5rem;
+        @media screen and (max-width: 630px){
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+
+        }
+        color: #1d0037;
+    }
+
+    &__para{
+        font-size: 1.7rem;
+        color: #1d0037;
+        line-height: 23px;
+        @media screen and (max-width: 630px){
+            font-size: 1.5rem;
+            line-height: 20px;
+        }
+    }
+
+    
+    
+}
+

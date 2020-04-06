@@ -1,0 +1,103 @@
+.single-teams{
+
+    grid-column: full-start / full-end;
+
+    &__bg{
+        height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    &:after{
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: inherit;
+        z-index: -1;
+        
+    }
+
+    }
+
+    &__img{
+
+        margin-right: 24px;
+        border-right: 6px solid;
+        padding-right: 17px;
+
+        img{
+            width: 200px;
+            height: 210px;
+            @media screen and (max-width: 720px){
+                height: auto;
+                width: 160px;
+            }
+            @media screen and (max-width: 400px){
+                
+                width: 107px;
+            }
+        }
+    }
+
+    &__title{
+        
+        font-size: 3rem;
+        text-transform: uppercase;
+        background: aliceblue;
+        padding: 6px;
+        border-radius: 3px;
+        margin-right: -86px;
+        @media screen and (max-width: 400px){
+            font-size: 1.5rem;
+            
+        }
+        @media screen and (max-width: 720px){
+            font-size: 2rem;
+            margin-right: 0;
+        }
+        
+    }
+
+    &__content{
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 79%;
+        @media screen and (max-width: 720px){
+            width: 90%;
+        }
+
+
+        p{
+            color: #2e3031;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 29px;
+            margin-bottom: 27px;
+            a{  color: #a7191b;
+                font-weight: 700;
+            }
+        }
+
+        h2.content__title{
+            text-align: center;
+            font-size: 3rem;
+            @media screen and (max-width: 720px){
+                font-size: 2rem;
+            }
+            text-transform: uppercase;
+            color: #2e3031;
+            margin-bottom: 9px;
+            border-bottom: 3px solid;
+            padding-bottom: 3px;
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+.video{
+
+    grid-column: center-start/ center-end;
+    border-bottom: 3px solid #ee2e31;
+    padding-bottom: 30px;
+
+    &__title{
+        color: #ee2e31;
+        text-transform: uppercase;
+        font-size: 4rem;
+        letter-spacing: 2px;
+        font-weight: 600;
+        border-bottom: 3px solid #ee2e31;
+        padding-bottom: 0.4rem;
+        margin: 4rem 0;
+        margin-bottom: 20px;
+    }
+
+    &__header{
+        font-size: 2.1rem;
+        text-align: center;
+        color: #e2272a;
+        margin-bottom: 11px;
+    }
+
+    &__clip{
+
+        border: 2px solid #ee2e31;
+        height: 535px;
+        box-shadow: 0 3px 10px rgba($color: #000000, $alpha: 0.3);
+        @media screen and (max-width: 1148px){height: 360px;}
+        iframe{
+            width: 100%;
+            height: 535px;
+            @media screen and (max-width: 1148px){height: 360px;}
+        }
+    }
+
+}

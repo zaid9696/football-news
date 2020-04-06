@@ -1,0 +1,33 @@
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+$color-primary:#ee2e31;
+$color-secondary:#f4c095;
+$color-third:#19171a;
+
+
+html{
+
+    font-family: 'Muli', sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    
+    @media screen and (max-width: 1148px){
+
+        font-size: 50%;
+
+    }
+}
+
+body{
+    display: grid;
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8,[col-start]  minmax(min-content, 15rem) [col-start]) [center-end] minmax(2rem, 1fr) [full-end];
+    height: 100vh;
+
+}
