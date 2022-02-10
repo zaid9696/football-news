@@ -6,7 +6,7 @@
   "main": "index.js",
   "dependencies": {
     "lodash": "^4.17.15",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "owl.carousel": "^2.3.4",
     "simplebar": "^5.1.0"
   },
